@@ -4,10 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
     app:startDestination="@id/mapsFragment">
-
     <fragment
         android:id="@+id/mapsFragment"
-        android:name="placestogo.MapsFragment"
-        android:label="fragment_maps"
-        tools:layout="@layout/fragment_maps" />
+        android:name="com.canerture.placestogo.ui.maps.MapsFragment"
+        android:label="MapsFragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.canerture.placestogo.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.canerture.placestogo.ui.feed.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" />
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.canerture.placestogo.ui.signin.SignInFragment"
+        android:label="SignInFragment"
+        tools:layout="@layout/fragment_sign_in" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.canerture.placestogo.ui.signup.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up" />
 </navigation>
